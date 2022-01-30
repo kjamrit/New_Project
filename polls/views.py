@@ -2,7 +2,7 @@ from django.shortcuts import render
 from django.http import HttpResponse
 
 def home(request):
-    return HttpResponse('<h1> Polls Home </h1>')
+    return render(request, 'polls/home.html')
     
 def greeting(request):
     return HttpResponse('<h1> How you doin? </h1>')
